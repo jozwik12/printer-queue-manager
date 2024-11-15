@@ -1,10 +1,10 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
-export type PrintJobDocument = HydratedDocument<printJob>;
+export type PrintJobDocument = HydratedDocument<PrintJob>;
 
 @Schema()
-export class printJob {
+export class PrintJob {
   @Prop()
   id: number;
 
@@ -18,4 +18,4 @@ export class printJob {
   link: string;
 }
 
-export const PrintJobSchema = SchemaFactory.createForClass(printJob);
+export const PrintJobSchema = SchemaFactory.createForClass(PrintJob);
