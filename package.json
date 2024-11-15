@@ -6,7 +6,8 @@
     "build": "npm run build --prefix backend && npm run build --prefix frontend",
     "lint": "npm run lint --prefix backend && npm run lint --prefix frontend"
   },
-  "dependencies": {
-    "concurrently": "^9.1.0"
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "husky": "^9.1.6"
   }
 }
