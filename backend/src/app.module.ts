@@ -5,7 +5,10 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { PrintJobModule } from './modules/print-job/print-job.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost/nest'), PrintJobModule],
+  imports: [
+    MongooseModule.forRoot('mongodb://localhost/printQueue'),
+    PrintJobModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
